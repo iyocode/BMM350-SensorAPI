@@ -1478,7 +1478,7 @@ static void update_default_coefiecents(float *lsb_to_ut_degc)
 static int8_t otp_dump_after_boot(struct bmm350_dev *dev)
 {
     /* Variable to store the function result */
-    int8_t rslt;
+    int8_t rslt = 0;
 
     uint16_t otp_word = 0;
     uint8_t indx;
